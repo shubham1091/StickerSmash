@@ -61,9 +61,7 @@ export const Button = ({ lable, theme, onPress }: Props) => {
     <View style={styles.buttonContainer}>
       <Pressable
         style={styles.button}
-        onPress={() => {
-          alert(`You clicked ${lable}`);
-        }}
+        onPress={onPress}
       >
         <Text style={styles.buttonLabel}>{lable}</Text>
       </Pressable>
